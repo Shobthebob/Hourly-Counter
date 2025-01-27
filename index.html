@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hourly Rate Counter</title>
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="app-container">
+		<div class="card">
+			<div class="card-header">
+				<h1>Hourly Rate Counter</h1>
+			</div>
+
+			<div class="settings-section">
+				<label class="settings-label">
+					<span>Show Seconds</span>
+					<div class="toggle">
+						<input type="checkbox" id="show-seconds">
+						<span class="toggle-slider"></span>
+					</div>
+				</label>
+			</div>
+
+			<div class="timer-section">
+				<div class="timer" id="timer">00:00</div>
+			</div>
+
+			<div class="money-section">
+				<div class="money-display" id="money-display">$0.00</div>
+				<div class="rate-display">per hour: $13</div>
+				<!-- <input class="rate" type="number" min="0"> -->
+			</div>
+
+			<div class="control-section">
+				<button id="start-stop" class="btn btn-primary">
+					<span class="btn-text">Start</span>
+				</button>
+				<button id="pause" class="btn btn-secondary" disabled>
+					<span class="btn-text">Pause</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
